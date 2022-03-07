@@ -1,7 +1,7 @@
 import React from "react"
 import Planet from "./Planet"
 
-function PlanetList({planets}) {
+function PlanetList() {
     return(
         <table>
             <tbody>
@@ -11,11 +11,7 @@ function PlanetList({planets}) {
                     <th>Terrain</th>
                     <th>Population</th>
                 </tr>
-                {
-                    planets.map(planet => {
-                        return <Planet key={planet.name} planet={planet} />;
-                    })
-                }
+                {/** Render a list of <Planet> components here. */}
             </tbody>
         </table>
     );
